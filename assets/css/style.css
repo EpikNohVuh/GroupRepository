@@ -1,0 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    text-shadow: 1px 1px white;
+}
+
+.color-peacock{
+    background-color: #5499c7;
+}
+
+.jumbotron {
+    background-color:  #2471a3;
+}
+
