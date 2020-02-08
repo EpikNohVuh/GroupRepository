@@ -3,7 +3,7 @@ $(document).ready(function () {
 
   // Your web app's Firebase configuration
   var firebaseConfig = {
-    apiKey: "AIzaSyCfiz_DbXYiXTrzVb60KKajtYEhL98aZps",
+    apiKey: "",
     authDomain: "orlandodogpark.firebaseapp.com",
     databaseURL: "https://orlandodogpark.firebaseio.com",
     projectId: "orlandodogpark",
