@@ -25,7 +25,7 @@
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-
+    
 
 
 </head>
@@ -38,13 +38,17 @@
             <p class="lead font-weight-bold text-center">Because Dogs Need Fun Too!!</p>
             <h2 id="currentTime"></h2>
         </div>
+        
+    
+        <div class="dogMap float-left" id="map">
+         </div>
 
-        <div class="dogMap float-left">
- <!
-        </div>
+        <div class="weather float-left">
+            <div id="temperature"></div>
+            <div id="humidity"></div>
+            <div id="wind"></div>
+            <div id="Rain"></div>
 
-        <div class="weatherMap float-left">
-            <img src="./assets/images/weather.jpg"class="m4">
         </div>
 
         <div class="clearfix"></div>
@@ -111,7 +115,8 @@
 
     <script src="assets/javascript/script.js"></script>
     <script src="assets/javascript/config.js"></script>
-  <script src='https://maps.googleapis.com/maps/api/js?&callback=initMap&async defer&key=' + mykey></script>
+    <script src="assets/javascript/weather.js"></script>
+  <!-- <script src='https://maps.googleapis.com/maps/api/js?&callback=initMap&async defer&key=' + mykey></script> -->
   </body>
 
 </html>
