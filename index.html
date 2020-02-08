@@ -39,16 +39,12 @@
             <h2 id="currentTime"></h2>
         </div>
 
-        <div class="map float-left">
-            <img src="./assets/images/dogparkmap.jpg" width="800" height="800" class="m4">
-
-
+        <div class="dogMap float-left">
+ <!
         </div>
 
-        <div class="weather float-left">
+        <div class="weatherMap float-left">
             <img src="./assets/images/weather.jpg"class="m4">
-            
-
         </div>
 
         <div class="clearfix"></div>
@@ -99,7 +95,7 @@
                         <input type="text" class="form-control" id="breed" maxlength=20 required />
                     </div>
                     <div class="form-group">
-                        <label for="comment">CommentS/Identifiers</label>
+                        <label for="comment">Comments/Identifiers</label>
                         <input type="text" class="form-control" id="comment" maxlength=20 required />
                     </div>
                     <button type="submit" class="btn color-peacock text-light" id="addDate">Add a PlayDate</button>
@@ -113,20 +109,9 @@
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
     <script src="assets/javascript/script.js"></script>
     <script src="assets/javascript/config.js"></script>
-
-
-</body>
+  <script src='https://maps.googleapis.com/maps/api/js?&callback=initMap&async defer&key=' + mykey></script>
+  </body>
 
 </html>
