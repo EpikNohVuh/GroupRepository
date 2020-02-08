@@ -25,7 +25,7 @@
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-
+    
 
 
 </head>
@@ -38,14 +38,17 @@
             <p class="lead font-weight-bold text-center">Because Dogs Need Fun Too!!</p>
             <h2 id="currentTime"></h2>
         </div>
-        <div id="openweathermap-widget-11"></div>
-        <script src='//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/d3.min.js'></script><script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 11,cityid: '2643743',appid: '86b676c83b96272e6a1b1cf2aa1cca53',units: 'metric',containerid: 'openweathermap-widget-11',  });  (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();</script>
+        
+    
         <div class="map float-left" id="map">
             <img src="./assets/images/dogparkmap.jpg" width="800" height="800" class="m4">
         </div>
 
         <div class="weather float-left">
-            <img src="./assets/images/weather.jpg"class="m4">
+            <div id="temperature"></div>
+            <div id="humidity"></div>
+            <div id="wind"></div>
+            <div id="Rain"></div>
         </div>
 
         <div class="clearfix"></div>
@@ -117,7 +120,8 @@
 
     <script src="assets/javascript/script.js"></script>
     <script src="assets/javascript/config.js"></script>
-  <script src='https://maps.googleapis.com/maps/api/js?&callback=initMap&async defer&key=' + mykey></script>
+    <script src="assets/javascript/weather.js"></script>
+  <!-- <script src='https://maps.googleapis.com/maps/api/js?&callback=initMap&async defer&key=' + mykey></script> -->
   </body>
 
 </html>
