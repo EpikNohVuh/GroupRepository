@@ -47,7 +47,6 @@ $(document).ready(function () {
     console.log(comment);
 
     var database = firebase.database();
-<<<<<<< HEAD
 
     // Code for handling the push
     database.ref().push({
@@ -85,7 +84,6 @@ $(document).ready(function () {
   });
 
 }); // END - $(document).ready(function () 
-=======
   
   var mykey = config.mykey;
 
@@ -189,4 +187,3 @@ marker11.setMap(map);
 marker12.setMap(map);
 marker13.setMap(map);
 
->>>>>>> c7226eed916709db524ce381ec1a9b6c568f3ea3
