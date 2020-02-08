@@ -40,15 +40,15 @@
         </div>
         
     
-        <div class="map float-left" id="map">
-            <img src="./assets/images/dogparkmap.jpg" width="800" height="800" class="m4">
-        </div>
+        <div class="dogMap float-left" id="map">
+         </div>
 
         <div class="weather float-left">
             <div id="temperature"></div>
             <div id="humidity"></div>
             <div id="wind"></div>
             <div id="Rain"></div>
+
         </div>
 
         <div class="clearfix"></div>
@@ -61,15 +61,14 @@
                 <thead>
                     <tr>
                         <td class="font-weight-bold">Date</td>
+                        <td class="font-weight-bold">Time</td>
                         <td class="font-weight-bold">Breed</td>
                         <td class="font-weight-bold">Park</td>
-                        <td class="font-weight-bold">Time</td>
-                        <td class="font-weight-bold">Owner</td>
                         <td class="font-weight-bold">Comments</td>
                     </tr>
                 </thead>
-                <tbody class="table-hover" id="tbodyTrain">
-                    <!-- TRAIN ROUTE GETS APPENDED HERE -->
+                <tbody class="table-hover" id="playDatePlayBook">
+                    <!-- PLAYDATES GETS APPENDED HERE -->
                 </tbody>
             </table>
 
@@ -83,31 +82,27 @@
             <div class="px-2">
                 <form>
                     <div class="form-group">
-                        <label for="TrainName">Date</label>
-                        <input type="text" class="form-control" id="TrainName" maxlength=20 required />
+                        <label for="date">Date</label>
+                        <input type="text" class="form-control" id="date" maxlength=20 required />
                     </div>
                     <div class="form-group">
-                        <label for="TrainName">Breed</label>
-                        <input type="text" class="form-control" id="TrainName" maxlength=20 required />
-                    </div>
-                    <div class="form-group">
-                        <label for="Destination">Park</label>
-                        <input type="text" class="form-control" id="Destination" maxlength=20 required />
-                    </div>
-                    <div class="form-group">
-                        <label for="firstTrain">Time</label>
-                        <input type="text" class="form-control" id="FirstTrain" placeholder="HH:MM" maxlength=5
+                        <label for="time">Time</label>
+                        <input type="text" class="form-control" id="time" placeholder="HH:MM" maxlength=5
                             required />
                     </div>
                     <div class="form-group">
-                        <label for="TrainName">Owner</label>
-                        <input type="text" class="form-control" id="TrainName" maxlength=20 required />
+                        <label for="park">Park</label>
+                        <input type="text" class="form-control" id="park" maxlength=20 required />
                     </div>
                     <div class="form-group">
-                        <label for="frequency">Comments (identifiers)</label>
-                        <input type="number" class="form-control" id="Frequency" required />
+                        <label for="breed">Breed</label>
+                        <input type="text" class="form-control" id="breed" maxlength=20 required />
                     </div>
-                    <button type="submit" class="btn color-peacock text-light" id="AddTrain">Add Train</button>
+                    <div class="form-group">
+                        <label for="comment">Comments/Identifiers</label>
+                        <input type="text" class="form-control" id="comment" maxlength=20 required />
+                    </div>
+                    <button type="submit" class="btn color-peacock text-light" id="addDate">Add a PlayDate</button>
                 </form>
             </div>
 
