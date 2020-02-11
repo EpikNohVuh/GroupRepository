@@ -1,6 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
 
+body {
+    background-image: url('https://i.pinimg.com/736x/71/fc/e1/71fce187a46067993b3798cd80034762.jpg'); 
+    /* background-image: url("assets/images/BG_Tile_PawPrint.jpg");*/
+}
+
 h1 {
     font-family: 'Pacifico', cursive;
     text-shadow: 1px 1px white;
@@ -14,3 +19,32 @@ h1 {
     background-color:  #2471a3;
 }
 
+#ui-datepicker-div {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+.ui-state-default {
+    padding: 3px;
+}
+
+.ui-datepicker-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-group {
+    text-align:left;
+}
+#weatherWindow {
+    background-color: white;
+    border: 3px solid #2471a3;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 6px
+}
+.hourlyWeather {
+    font-weight: bold;
+}

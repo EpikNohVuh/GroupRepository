@@ -10,6 +10,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css" class="css">
 
+
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <!-- add the following scripts to the bottom of your <body> tag, but before you use any Firebase services: -->
     <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
@@ -25,7 +26,9 @@
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-    
+
+
+    <script src="./assets/javascript/jquery-ui.min.js"></script>
 
 
 </head>
@@ -43,11 +46,18 @@
         <div class="dogMap float-left" id="map">
          </div>
 
-        <div class="weather float-left">
-            <div id="temperature"></div>
-            <div id="humidity"></div>
-            <div id="wind"></div>
-            <div id="Rain"></div>
+
+        <div class="dogMap float-left" id="map">
+
+        </div>
+        <div id="weatherWindow" class="float-right p5 m5">
+            <div class="weather ">
+                <div class="hourlyWeather">CURRENT HOURLY WEATHER</div>
+                <div id="temperature"></div>
+                <div id="humidity"></div>
+                <div id="wind"></div>
+                <div id="Rain"></div>
+            </div>
 
         </div>
 
@@ -75,9 +85,9 @@
 
         </div>
 
-        <div class="card mt-4">
+        <div class="card text-center mt-4">
             <div class="card-header color-peacock text-light">
-                
+                <strong>Schedule your Doggie Play Date</strong>
             </div>
             <div class="px-2">
                 <form>
@@ -87,8 +97,7 @@
                     </div>
                     <div class="form-group">
                         <label for="time">Time</label>
-                        <input type="text" class="form-control" id="time" placeholder="HH:MM" maxlength=5
-                            required />
+                        <input type="text" class="form-control" id="time" placeholder="HH:MM" maxlength=5 required />
                     </div>
                     <div class="form-group">
                         <label for="park">Park</label>
@@ -100,7 +109,7 @@
                     </div>
                     <div class="form-group">
                         <label for="comment">Comments/Identifiers</label>
-                        <input type="text" class="form-control" id="comment" maxlength=20 required />
+                        <input type="text" class="form-control" id="comment" maxlength=100 required />
                     </div>
                     <button type="submit" class="btn color-peacock text-light" id="addDate">Add a PlayDate</button>
                 </form>
@@ -115,8 +124,12 @@
 
     <script src="assets/javascript/script.js"></script>
     <script src="assets/javascript/config.js"></script>
+    <script src="assets/javascript/maps.js"></script>
+    <script src="assets/javascript/datepicker.js"></script>
     <script src="assets/javascript/weather.js"></script>
-  <!-- <script src='https://maps.googleapis.com/maps/api/js?&callback=initMap&async defer&key=' + mykey></script> -->
-  </body>
+    <script src='https://maps.googleapis.com/maps/api/js?&callback=initMap&async defer&key=' + mykey></script>
+</body>
+
+  
 
 </html>

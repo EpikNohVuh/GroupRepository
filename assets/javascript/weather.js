@@ -1,6 +1,6 @@
 // This is our API key
-var APIKey = "0021273c2fefbe29acd96b3940316e7a";
 
+var APIKey = mapKey.Weather;
 // Here we are building the URL we need to query the database
 var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
   "q=Orlando,Florida&units=imperial&rain=rain.1h&appid=" + APIKey;
@@ -15,7 +15,6 @@ $.ajax({
 
     // Log the queryURL
     console.log(queryURL);
-
     // Log the resulting object
     console.log(response);
 
