@@ -24,7 +24,7 @@ $.ajax({
             $("#humidity").text("Humidity: " + response.main.humidity + "%");
             $("#temperature").text("Temperature (F) " + response.main.temp);
             // If rain exist then display rain or display weather
-            $("#Rain").text("Rain" + response.weather[0].main + "")
+            $("#Rain").text("Rain: " + response.weather[0].main + "")
             
     
             // Log the data in the console as well
