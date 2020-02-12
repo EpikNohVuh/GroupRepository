@@ -16,6 +16,8 @@ Go ahead and give it a try: https://epiknohvuh.github.io/GroupRepository/
 - Google Fonts
 - Google Maps API
 - OpenWeatherMap API
+- jQuery
+- jQueryUI
 
 ## Collaborators
 
